@@ -3,6 +3,7 @@
   import Header from "$lib/Header.svelte";
   import Intro from "$lib/Intro.svelte";
   import Skills from "$lib/Skills.svelte";
+  import Works from "$lib/Works.svelte";
 </script>
 
 <Header />
@@ -11,6 +12,7 @@
 </main>
 <Aboutme />
 <Skills />
+<Works />
 
 <style>
 </style>
