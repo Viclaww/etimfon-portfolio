@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rainbow:hover {
+  --border-size: 0.15rem;
+  border: var(--border-size) solid transparent;
+  border-image: conic-gradient(
+      from var(--angle),
+      #59d2fe 0deg 90deg,
+      #191923 180deg 270deg,
+      #2d2bb5 90deg 180deg,
+      #cb2cc3 270deg 360deg
+    )
+    1 stretch;
+}
+
+/* Animate when Houdini is available */
+@supports (background: paint(houdini)) {
+  @property --opacity {
+    syntax: "<number>";
+    initial-value: 0.5;
+    inherits: false;
+  }
+
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @keyframes opacityChange {
+    to {
+      --opacity: 1;
+    }
+  }
+
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0%);
+    }
+
+    50% {
+      transform: translateY(-4%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  .rainbow:hover {
+    animation: rotate 15s linear infinite, bounce 2s linear infinite;
+  }
+
+  /* Hide the warning */
+  .warning {
+    display: none;
+  }
+}
