@@ -14,7 +14,7 @@
   <div>
     <div class="flex relative w-full mt-10 justify-around flex-col md:flex-row">
       <div
-        class="article-writing shadow-lg border-[0.15rem] border-transparent hover:shadow-none shadow-dblue z-0 my-5 w-full relative rainbow flex cursor-pointer flex-col justify-around items-center md:w-[22%] text-milk p-5 box-border bg-dblue/90"
+        class="article-writing shadow-sm border-[0.15rem] border-transparent hover:shadow-none shadow-dblue z-0 my-5 w-full relative rainbow flex cursor-pointer flex-col justify-around items-center md:w-[22%] text-milk p-5 box-border bg-dblue/90"
       >
         <img class="w-2/3" src={writer} alt="articles" />
         <article class=" ">
@@ -27,7 +27,7 @@
         </article>
       </div>
       <div
-        class="article-writing z-0 shadow-lg border-[0.15rem] border-transparent hover:shadow-none shadow-dblue my-5 w-full relative rainbow flex cursor-pointer flex-col justify-around items-center md:w-[22%] text-milk p-5 bg-dblue/90"
+        class="article-writing z-0 shadow-sm border-[0.15rem] border-transparent hover:shadow-none shadow-dblue my-5 w-full relative rainbow flex cursor-pointer flex-col justify-around items-center md:w-[22%] text-milk p-5 bg-dblue/90"
       >
         <img class="w-2/3" src={seo} alt="articles" />
         <article class="">
@@ -43,7 +43,7 @@
         </article>
       </div>
       <div
-        class="article-writing z-0 my-5 shadow-lg hover:shadow-none border-[0.15rem] border-transparent shadow-dblue w-full relative rainbow flex cursor-pointer flex-col justify-around items-center md:w-[22%] text-milk p-5 bg-dblue/90"
+        class="article-writing z-0 my-5 shadow-sm hover:shadow-none border-[0.15rem] border-transparent shadow-dblue w-full relative rainbow flex cursor-pointer flex-col justify-around items-center md:w-[22%] text-milk p-5 bg-dblue/90"
       >
         <img class="w-2/3" src={api} alt="articles" />
         <article class="">
@@ -55,7 +55,7 @@
         </article>
       </div>
       <div
-        class="article-writing z-0 my-5 shadow-lg hover:shadow-none border-[0.15rem] border-transparent shadow-dblue w-full relative rainbow flex cursor-pointer flex-col justify-around items-center md:w-[22%] text-milk p-2 bg-dblue/90"
+        class="article-writing z-0 my-5 shadow-sm hover:shadow-none border-[0.15rem] border-transparent shadow-dblue w-full relative rainbow flex cursor-pointer flex-col justify-around items-center md:w-[22%] text-milk p-2 bg-dblue/90"
       >
         <img class="w-2/3" src={whitepaper} alt="articles" />
         <article class="">
